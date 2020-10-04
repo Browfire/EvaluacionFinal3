@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">EvaluacionFinal3</string>
+
+    <string name="logintv">LOGIN</string>
+    <string name="user">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="loginbtn">INGRESAR</string>
+
+    <string name="usertv">Usuario</string>
+    <string name="btn1">Cambio de Divisas</string>
+    <string name="btn2">Calcular multa</string>
+    <string name="btn3">Seguro automotriz</string>
+    <string name="btn4">Salir</string>
+    <string name="banneriv">Banner</string>
+
+    <string name="txt1divisas">Ingrese cantidad: $</string>
+    <string name="divisaset">10000</string>
+    <string name="txt2divisas">Cambio a:</string>
+    <string name="txt3divisas">USD</string>
+    <string name="txt4divisas">EUR</string>
+    <string name="chiiv">Bandera de Chile</string>
+    <string name="usdiv">Bandera de Estados Unidos</string>
+    <string name="euriv">Bandera de Europa</string>
+    <string name="txtusd">US$ 12.74</string>
+    <string name="txteur">10.86 €</string>
+    <string name="btn1divisas">Convertir</string>
+    <string name="btn2divisas">Volver</string>
+
+    <string name="runtv">RUN</string>
+    <string name="nombretv">NOMBRE</string>
+    <string name="sueldotv">SUELDO MÍNIMO</string>
+    <string name="run">Ingrese RUN</string>
+    <string name="nombre">Ingrese Nombre</string>
+    <string name="sueldo">Ingrese Sueldo</string>
+    <string name="btnCalcular">CALCULAR</string>
+    <string name="btnNuevo">NUEVO</string>
+    <string name="btnVolver">VOLVER</string>
+    <string name="textViewTotal">Multa a pagar:</string>
+    <string name="textViewCLP">$</string>
+
+    <string name="propietariotv">Nombre del propietario</string>
+    <string name="valortv">Valor del vehículo</string>
+    <string name="propietarioet">Ingrese nombre</string>
+    <string name="valoret">Ingrese valor $</string>
+    <string name="modelotv">Modelo del vehículo</string>
+    <string name="edadtv">Edad propietario</string>
+    <string name="edad1cb">18 a 23 años</string>
+    <string name="edad2cb">24 a 52 años</string>
+    <string name="edad3cb">53 o más</string>
+    <string name="modelo1rb">Modelo A</string>
+    <string name="modelo2rb">Modelo B</string>
+    <string name="modelo3rb">Modelo C</string>
+    <string name="accidentestv">Número de accidentes</string>
+    <string name="accidenteset"> </string>
+    <string name="btnNuevoS">NUEVO</string>
+    <string name="btnCalcularS">CALCULAR</string>
+    <string name="btnVolverS">VOLVER</string>
+    <string name="costotv">Costo total de la póliza</string>
+    <string name="clptv">$</string>
+    <string name="autoiv">Icono seguro automotriz</string>
+
+</resources>

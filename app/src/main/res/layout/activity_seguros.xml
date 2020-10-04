@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seguros">
+
+    <TextView
+        android:id="@+id/propietariotv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/propietariotv"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/valortv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/valortv"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/propietarioet" />
+
+    <EditText
+        android:id="@+id/propietarioet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="9"
+        android:hint="@string/propietarioet"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/propietariotv" />
+
+    <EditText
+        android:id="@+id/valoret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="9"
+        android:hint="@string/valoret"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valortv" />
+
+    <TextView
+        android:id="@+id/modelotv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/modelotv"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valoret" />
+
+    <TextView
+        android:id="@+id/edadtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/edadtv"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/modelotv"
+        app:layout_constraintTop_toBottomOf="@+id/valoret" />
+
+    <CheckBox
+        android:id="@+id/edad1cb"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/edad1cb"
+        app:layout_constraintStart_toEndOf="@+id/rg1"
+        app:layout_constraintTop_toBottomOf="@+id/edadtv" />
+
+    <CheckBox
+        android:id="@+id/edad2cb"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/edad2cb"
+        app:layout_constraintStart_toEndOf="@+id/rg1"
+        app:layout_constraintTop_toBottomOf="@+id/edad1cb" />
+
+    <CheckBox
+        android:id="@+id/edad3cb"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="@string/edad3cb"
+        app:layout_constraintStart_toEndOf="@+id/rg1"
+        app:layout_constraintTop_toBottomOf="@+id/edad2cb" />
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="156dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modelotv">
+
+        <RadioButton
+            android:id="@+id/modelo1rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modelo1rb" />
+
+        <RadioButton
+            android:id="@+id/modelo2rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modelo2rb" />
+
+        <RadioButton
+            android:id="@+id/modelo3rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modelo3rb" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/accidentestv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/accidentestv"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg1" />
+
+    <EditText
+        android:id="@+id/accidenteset"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:autofillHints=""
+        android:ems="4"
+        android:hint="@string/accidenteset"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/accidentestv"
+        app:layout_constraintTop_toBottomOf="@+id/edad3cb" />
+
+    <Button
+        android:id="@+id/btnNuevoS"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:onClick="refresh"
+        android:text="@string/btnNuevoS"
+        android:textColor="#FCFCFC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accidentestv" />
+
+    <Button
+        android:id="@+id/btnCalcularS"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:onClick="calcularSeguro"
+        android:text="@string/btnCalcularS"
+        android:textColor="#FCFCFC"
+        app:layout_constraintStart_toEndOf="@+id/btnNuevoS"
+        app:layout_constraintTop_toBottomOf="@+id/accidentestv" />
+
+    <Button
+        android:id="@+id/btnVolverS"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/colorPrimary"
+        android:onClick="salirSeguros"
+        android:text="@string/btnVolverS"
+        android:textColor="#FCFCFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/costotv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/costotv"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNuevoS" />
+
+    <TextView
+        android:id="@+id/costototaltv"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costotv" />
+
+    <TextView
+        android:id="@+id/clptv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="@string/clptv"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/costototaltv"
+        app:layout_constraintTop_toBottomOf="@+id/costotv" />
+
+    <ImageView
+        android:id="@+id/autoiv"
+        android:layout_width="125dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/autoiv"
+        app:layout_constraintStart_toEndOf="@+id/propietarioet"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/auto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Divisas">
+
+    <TextView
+        android:id="@+id/txt1divisas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/txt1divisas"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/chiiv"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chiiv" />
+
+    <EditText
+        android:id="@+id/divisaset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="5"
+        android:hint="@string/divisaset"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txt1divisas"
+        app:layout_constraintTop_toBottomOf="@+id/chiiv" />
+
+    <TextView
+        android:id="@+id/txt2divisas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/txt2divisas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1divisas" />
+
+    <TextView
+        android:id="@+id/txt3divisas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/txt3divisas"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/usdiv"
+        app:layout_constraintTop_toBottomOf="@+id/txt2divisas" />
+
+    <TextView
+        android:id="@+id/txt4divisas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/txt4divisas"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/euriv"
+        app:layout_constraintTop_toBottomOf="@+id/txt3divisas" />
+
+    <ImageView
+        android:id="@+id/usdiv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/usdiv"
+        app:layout_constraintEnd_toEndOf="@+id/euriv"
+        app:layout_constraintTop_toBottomOf="@+id/txt2divisas"
+        app:srcCompat="@drawable/usa" />
+
+    <ImageView
+        android:id="@+id/euriv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/euriv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usdiv"
+        app:srcCompat="@drawable/europa" />
+
+    <ImageView
+        android:id="@+id/chiiv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chile"
+        android:contentDescription="@string/chiiv" />
+
+    <Button
+        android:id="@+id/btn1divisas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="@string/btn1divisas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisaset"
+        android:onClick="convertir" />
+
+
+    <Button
+        android:id="@+id/btn2divisas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorAccent"
+        android:text="@string/btn2divisas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="salirDivisas"/>
+
+    <TextView
+        android:id="@+id/txtusd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/txtusd"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/usdiv"
+        app:layout_constraintTop_toBottomOf="@+id/txt2divisas" />
+
+    <TextView
+        android:id="@+id/txteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/txteur"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/euriv"
+        app:layout_constraintTop_toBottomOf="@+id/txtusd" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
